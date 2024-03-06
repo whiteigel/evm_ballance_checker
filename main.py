@@ -6,7 +6,7 @@ from prettytable import PrettyTable
 with open('abi_token.json', 'r') as file:
     abi = file.read()
 
-selected_network = "zksync"  # Изменить на "zksync", если хотите использовать другую сеть
+selected_network = "scroll"  # Изменить на "zksync", если хотите использовать другую сеть
 selected_token = "usdc"  # Изменить на "usdt", если хотите получить баланс другого токена
 
 connect = Web3(Web3.HTTPProvider(rpc[selected_network]))
