@@ -1,6 +1,6 @@
 from web3 import Web3
-from config_old import *
-from data_old import *
+from config import *
+from data import *
 from prettytable import PrettyTable
 
 with open('abi_token.json', 'r') as file:
