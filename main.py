@@ -27,7 +27,7 @@ for profile, wallet in wallets.items():
     # Получение баланса выбранного токена для адреса, округление до 3 знака
     balance_selected_token = round(contract.functions.balanceOf(wallet).call() / (10 ** decimals), 3)
 
-    wallet_short = wallet[0:7]
+    wallet_short = wallet[0:7] # сокращение адреса до 7 знаков
 
     # Формирование таблицы для вывода
     table.add_row([profile, wallet_short, tx, balance_eth, balance_selected_token])
